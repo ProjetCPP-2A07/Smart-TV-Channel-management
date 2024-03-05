@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1125</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="Employer">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1311</width>
+      <height>1071</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Fan Heiti Std</family>
+      <pointsize>8</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 0, 127);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="Ajouter_2">
+     <attribute name="title">
+      <string>Ajouter spectateur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1121</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe Fan Heiti Std</family>
+        <pointsize>8</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="title">
+       <string>AJOUTER</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="ID_2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>22</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>ID:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Nom_2">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>143</y>
+         <width>45</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>NOM:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>203</y>
+         <width>80</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>PRENOM:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>264</y>
+         <width>141</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>ADRESSE MAIL:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>325</y>
+         <width>86</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>ADRESSE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>386</y>
+         <width>151</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>NUM TELEPHONE:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>112</x>
+         <y>446</y>
+         <width>151</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>AGE:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_ajouter_2">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>180</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>8514oem</family>
+         <pointsize>9</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   border-style: solid;
+   border-width: 2px;
+   border-color: #9999aa;
+   border-radius: 10px;
+   color: black;
+	background-color : qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1))
+   
+}
+QPushButton:enabled {
+      background-color:qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1)) ;
+      color: white;
+}
+ QPushButton:pressed{
+    background-color:#c24e4e;
+      color: white;
+}
+QPushButton:hover:!pressed{
+     background-color: #c24e4e ;
+      color: white;
+}
+ QPushButton:disabled{
+     background-color: #c24e4e ;
+      color: white;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>AJOUTER</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BoutonModifier_2">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>280</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>8514oem</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   border-style: solid;
+   border-width: 2px;
+   border-color: #9999aa;
+   border-radius: 10px;
+   color: black;
+	background-color : qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(254, 84, 0, 255), stop:1 rgba(255, 255, 255, 255))
+   
+}
+QPushButton:enabled {
+      background-color:qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1)) ;
+      color: white;
+}
+ QPustButton:pressed{
+    background-color:#c24e4e;
+      color: white;
+}
+QPushButton:hover:!pressed{
+     background-color: #c24e4e ;
+      color: white;
+}
+ QPushButton:disabled{
+     background-color: #c24e4e ;
+      color: white;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>MODIFIER</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>50</y>
+         <width>173</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="le_id_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_nom_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_prenom_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_mail_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_adresse_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_num_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="age">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Gerer_2">
+     <attribute name="title">
+      <string>Gerer  spectateurs</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>8514oem</family>
+        <pointsize>9</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Supprimer par ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LineSupprimer_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>80</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BoutonSupprimer_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>80</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>8514oem</family>
+        <pointsize>9</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+   border-style: solid;
+   border-width: 2px;
+   border-color: #9999aa;
+   border-radius: 10px;
+   color: black;
+	background-color : qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1))
+   
+}
+QPushButton:enabled {
+      background-color:qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1)) ;
+      color: white;
+}
+ QPustButton:pressed{
+    background-color:#c24e4e;
+      color: white;
+}
+QPushButton:hover:!pressed{
+     background-color: #c24e4e ;
+      color: white;
+}
+ QPushButton:disabled{
+     background-color: #c24e4e ;
+      color: white;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>8514oem</family>
+        <pointsize>9</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Chercher par ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LineChercher_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>140</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>1211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
