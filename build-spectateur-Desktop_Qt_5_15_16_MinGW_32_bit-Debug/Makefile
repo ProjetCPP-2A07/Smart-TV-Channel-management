@@ -121,10 +121,14 @@ Makefile: ../spectateur/spectateur.pro C:/Qt/5.15.16/mingw81_32/mkspecs/win32-g+
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bluetooth.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bluetooth_private.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_charts.pri \
+		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_charts_private.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_concurrent.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_concurrent_private.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_core.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_core_private.pri \
+		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_datavisualization.pri \
+		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_datavisualization_private.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_dbus.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_dbus_private.pri \
 		C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_designer.pri \
@@ -310,10 +314,14 @@ C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_axserver_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bluetooth.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bluetooth_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_bootstrap_private.pri:
+C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_charts.pri:
+C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_charts_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_concurrent.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_concurrent_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_core.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_core_private.pri:
+C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_datavisualization.pri:
+C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_datavisualization_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_dbus.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_dbus_private.pri:
 C:/Qt/5.15.16/mingw81_32/mkspecs/modules/qt_lib_designer.pri:

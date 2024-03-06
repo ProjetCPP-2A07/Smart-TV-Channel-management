@@ -32,11 +32,12 @@ struct qt_meta_stringdata_MainWindow_t {
     )
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
-        QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-        QT_MOC_LITERAL(1, 11, 12), // "pb_ajouter_2"
-        QT_MOC_LITERAL(2, 24, 0), // ""
-        QT_MOC_LITERAL(3, 25, 29), // "handleBoutonSupprimer2Clicked"
-        QT_MOC_LITERAL(4, 55, 28) // "on_BoutonSupprimer_2_clicked"
+QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
+QT_MOC_LITERAL(1, 11, 12), // "pb_ajouter_2"
+QT_MOC_LITERAL(2, 24, 0), // ""
+QT_MOC_LITERAL(3, 25, 29), // "handleBoutonSupprimer2Clicked"
+QT_MOC_LITERAL(4, 55, 28) // "on_BoutonSupprimer_2_clicked"
+
     },
     "MainWindow\0pb_ajouter_2\0\0"
     "handleBoutonSupprimer2Clicked\0"
