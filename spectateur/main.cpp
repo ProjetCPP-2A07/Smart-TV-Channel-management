@@ -3,6 +3,7 @@
 #include "connection.h"
 #include "mainwindow.h" // Assuming your MainWindow class is defined in this header file
 
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -10,15 +11,22 @@ int main(int argc, char *argv[])
 
     Connection c;
     bool test = c.createconnect();
+    MainWindow w;
 
-    if (test) {
-        // Connection successful, create the MainWindow
-        MainWindow w;
+    if(test)
+    {
 
-        // Show the MainWindow
         w.show();
+        QMessageBox::information(nullptr, QObject::tr("database is open"),
+                                 QObject::tr("connection successful.\n"
+                                             "Click Cancel to exit."), QMessageBox::Cancel);
 
     }
+    else
+        QMessageBox::critical(nullptr, QObject::tr("database is not open"),
+                              QObject::tr("connection failed.\n"
+                                          "Click Cancel to exit."), QMessageBox::Cancel);
+
 
     return a.exec();
 }
