@@ -97,7 +97,7 @@ bool Spectator::updateSpectator(int ID,QString nom,QString prenom ,QString email
 {
     QSqlQuery query;
 
-    query.prepare("UPDATE SPECTATEUR SET NOM=:nom, PERNOM=:prenom, EMAIL=:email, ADRESSE=:adresse, AGE=:age, TELEPHONE=:telephone WHERE ID=:id");
+    query.prepare("UPDATE SPECTATEUR SET NOM=:nom, PRENOM=:prenom, EMAIL=:email, ADRESSE=:adresse, AGE=:age, TELEPHONE=:telephone WHERE ID=:ID");
 
     query.bindValue(":ID", ID);
     query.bindValue(":nom", nom);

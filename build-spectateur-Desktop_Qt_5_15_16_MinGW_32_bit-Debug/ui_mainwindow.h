@@ -30,6 +30,14 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QTabWidget *Employer;
+    QWidget *Gerer_2;
+    QLabel *label_3;
+    QLineEdit *LineSupprimer_2;
+    QPushButton *BoutonSupprimer_2;
+    QLabel *label_4;
+    QLineEdit *LineChercher_2;
+    QTableView *tableView_2;
+    QPushButton *pb_gotomodifier;
     QWidget *Ajouter_2;
     QGroupBox *groupBox_2;
     QLabel *ID_2;
@@ -50,13 +58,6 @@ public:
     QLineEdit *le_adresse_2;
     QLineEdit *le_num_2;
     QLineEdit *age;
-    QWidget *Gerer_2;
-    QLabel *label_3;
-    QLineEdit *LineSupprimer_2;
-    QPushButton *BoutonSupprimer_2;
-    QLabel *label_4;
-    QLineEdit *LineChercher_2;
-    QTableView *tableView_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -85,18 +86,84 @@ public:
         Employer->setTabsClosable(false);
         Employer->setMovable(false);
         Employer->setTabBarAutoHide(false);
+        Gerer_2 = new QWidget();
+        Gerer_2->setObjectName(QString::fromUtf8("Gerer_2"));
+        label_3 = new QLabel(Gerer_2);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(50, 80, 171, 31));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("8514oem"));
+        font1.setPointSize(9);
+        font1.setBold(false);
+        font1.setItalic(false);
+        font1.setUnderline(false);
+        label_3->setFont(font1);
+        label_3->setStyleSheet(QString::fromUtf8(""));
+        LineSupprimer_2 = new QLineEdit(Gerer_2);
+        LineSupprimer_2->setObjectName(QString::fromUtf8("LineSupprimer_2"));
+        LineSupprimer_2->setGeometry(QRect(230, 80, 181, 31));
+        LineSupprimer_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        BoutonSupprimer_2 = new QPushButton(Gerer_2);
+        BoutonSupprimer_2->setObjectName(QString::fromUtf8("BoutonSupprimer_2"));
+        BoutonSupprimer_2->setGeometry(QRect(440, 80, 171, 31));
+        BoutonSupprimer_2->setFont(font1);
+        BoutonSupprimer_2->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"\n"
+"   border-style: solid;\n"
+"   border-width: 2px;\n"
+"   border-color: #9999aa;\n"
+"   border-radius: 10px;\n"
+"   color: black;\n"
+"	background-color : qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1))\n"
+"   \n"
+"}\n"
+"QPushButton:enabled {\n"
+"      background-color:qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1)) ;\n"
+"      color: white;\n"
+"}\n"
+" QPustButton:pressed{\n"
+"    background-color:#c24e4e;\n"
+"      color: white;\n"
+"}\n"
+"QPushButton:hover:!pressed{\n"
+"     background-color: #c24e4e ;\n"
+"      color: white;\n"
+"}\n"
+" QPushButton:disabled{\n"
+"     background-color: #c24e4e ;\n"
+"      color: white;\n"
+"}\n"
+"\n"
+""));
+        label_4 = new QLabel(Gerer_2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(50, 140, 151, 31));
+        label_4->setFont(font1);
+        label_4->setStyleSheet(QString::fromUtf8(""));
+        LineChercher_2 = new QLineEdit(Gerer_2);
+        LineChercher_2->setObjectName(QString::fromUtf8("LineChercher_2"));
+        LineChercher_2->setGeometry(QRect(230, 140, 181, 31));
+        LineChercher_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        tableView_2 = new QTableView(Gerer_2);
+        tableView_2->setObjectName(QString::fromUtf8("tableView_2"));
+        tableView_2->setGeometry(QRect(50, 210, 1001, 401));
+        tableView_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        pb_gotomodifier = new QPushButton(Gerer_2);
+        pb_gotomodifier->setObjectName(QString::fromUtf8("pb_gotomodifier"));
+        pb_gotomodifier->setGeometry(QRect(440, 150, 171, 29));
+        Employer->addTab(Gerer_2, QString());
         Ajouter_2 = new QWidget();
         Ajouter_2->setObjectName(QString::fromUtf8("Ajouter_2"));
         groupBox_2 = new QGroupBox(Ajouter_2);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(0, 0, 1121, 791));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Adobe Fan Heiti Std"));
-        font1.setPointSize(8);
-        font1.setBold(true);
-        font1.setItalic(false);
-        font1.setUnderline(false);
-        groupBox_2->setFont(font1);
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Adobe Fan Heiti Std"));
+        font2.setPointSize(8);
+        font2.setBold(true);
+        font2.setItalic(false);
+        font2.setUnderline(false);
+        groupBox_2->setFont(font2);
         groupBox_2->setTabletTracking(false);
         groupBox_2->setAutoFillBackground(false);
         groupBox_2->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 0, 127);"));
@@ -105,47 +172,41 @@ public:
         ID_2 = new QLabel(groupBox_2);
         ID_2->setObjectName(QString::fromUtf8("ID_2"));
         ID_2->setGeometry(QRect(120, 80, 22, 19));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Arial"));
-        font2.setPointSize(10);
-        font2.setBold(false);
-        font2.setItalic(true);
-        font2.setUnderline(false);
-        ID_2->setFont(font2);
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Arial"));
+        font3.setPointSize(10);
+        font3.setBold(false);
+        font3.setItalic(true);
+        font3.setUnderline(false);
+        ID_2->setFont(font3);
         Nom_2 = new QLabel(groupBox_2);
         Nom_2->setObjectName(QString::fromUtf8("Nom_2"));
         Nom_2->setGeometry(QRect(112, 143, 45, 19));
-        Nom_2->setFont(font2);
+        Nom_2->setFont(font3);
         label_10 = new QLabel(groupBox_2);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setGeometry(QRect(112, 203, 80, 19));
-        label_10->setFont(font2);
+        label_10->setFont(font3);
         label_11 = new QLabel(groupBox_2);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setGeometry(QRect(112, 264, 141, 19));
-        label_11->setFont(font2);
+        label_11->setFont(font3);
         label_12 = new QLabel(groupBox_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
         label_12->setGeometry(QRect(112, 325, 86, 19));
-        label_12->setFont(font2);
+        label_12->setFont(font3);
         label_13 = new QLabel(groupBox_2);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(112, 386, 151, 19));
-        label_13->setFont(font2);
+        label_13->setFont(font3);
         label_14 = new QLabel(groupBox_2);
         label_14->setObjectName(QString::fromUtf8("label_14"));
         label_14->setGeometry(QRect(112, 446, 151, 19));
-        label_14->setFont(font2);
+        label_14->setFont(font3);
         pb_ajouter_2 = new QPushButton(groupBox_2);
         pb_ajouter_2->setObjectName(QString::fromUtf8("pb_ajouter_2"));
         pb_ajouter_2->setGeometry(QRect(750, 180, 241, 31));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("8514oem"));
-        font3.setPointSize(9);
-        font3.setBold(false);
-        font3.setItalic(false);
-        font3.setUnderline(false);
-        pb_ajouter_2->setFont(font3);
+        pb_ajouter_2->setFont(font1);
         pb_ajouter_2->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "   border-style: solid;\n"
 "   border-width: 2px;\n"
@@ -255,63 +316,6 @@ public:
         verticalLayout_2->addWidget(age);
 
         Employer->addTab(Ajouter_2, QString());
-        Gerer_2 = new QWidget();
-        Gerer_2->setObjectName(QString::fromUtf8("Gerer_2"));
-        label_3 = new QLabel(Gerer_2);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(50, 80, 171, 31));
-        label_3->setFont(font3);
-        label_3->setStyleSheet(QString::fromUtf8(""));
-        LineSupprimer_2 = new QLineEdit(Gerer_2);
-        LineSupprimer_2->setObjectName(QString::fromUtf8("LineSupprimer_2"));
-        LineSupprimer_2->setGeometry(QRect(230, 80, 181, 31));
-        LineSupprimer_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        BoutonSupprimer_2 = new QPushButton(Gerer_2);
-        BoutonSupprimer_2->setObjectName(QString::fromUtf8("BoutonSupprimer_2"));
-        BoutonSupprimer_2->setGeometry(QRect(440, 80, 171, 31));
-        BoutonSupprimer_2->setFont(font3);
-        BoutonSupprimer_2->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"\n"
-"   border-style: solid;\n"
-"   border-width: 2px;\n"
-"   border-color: #9999aa;\n"
-"   border-radius: 10px;\n"
-"   color: black;\n"
-"	background-color : qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1))\n"
-"   \n"
-"}\n"
-"QPushButton:enabled {\n"
-"      background-color:qlineargradient(spread:pad, x1:0.07, y1:0.159091, x2:0.552174, y2:0.705, stop:0 rgba(36, 63, 130, 1), stop:1 rgba(114, 34, 127, 1)) ;\n"
-"      color: white;\n"
-"}\n"
-" QPustButton:pressed{\n"
-"    background-color:#c24e4e;\n"
-"      color: white;\n"
-"}\n"
-"QPushButton:hover:!pressed{\n"
-"     background-color: #c24e4e ;\n"
-"      color: white;\n"
-"}\n"
-" QPushButton:disabled{\n"
-"     background-color: #c24e4e ;\n"
-"      color: white;\n"
-"}\n"
-"\n"
-""));
-        label_4 = new QLabel(Gerer_2);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(50, 140, 151, 31));
-        label_4->setFont(font3);
-        label_4->setStyleSheet(QString::fromUtf8(""));
-        LineChercher_2 = new QLineEdit(Gerer_2);
-        LineChercher_2->setObjectName(QString::fromUtf8("LineChercher_2"));
-        LineChercher_2->setGeometry(QRect(230, 140, 181, 31));
-        LineChercher_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        tableView_2 = new QTableView(Gerer_2);
-        tableView_2->setObjectName(QString::fromUtf8("tableView_2"));
-        tableView_2->setGeometry(QRect(30, 210, 1211, 401));
-        tableView_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        Employer->addTab(Gerer_2, QString());
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -328,6 +332,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Supprimer par ID:", nullptr));
+        BoutonSupprimer_2->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Chercher par ID:", nullptr));
+        pb_gotomodifier->setText(QCoreApplication::translate("MainWindow", "Modifier", nullptr));
+        Employer->setTabText(Employer->indexOf(Gerer_2), QCoreApplication::translate("MainWindow", "Gerer  spectateurs", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "AJOUTER", nullptr));
         ID_2->setText(QCoreApplication::translate("MainWindow", "ID:", nullptr));
         Nom_2->setText(QCoreApplication::translate("MainWindow", "NOM:", nullptr));
@@ -339,10 +348,6 @@ public:
         pb_ajouter_2->setText(QCoreApplication::translate("MainWindow", "AJOUTER", nullptr));
         BoutonModifier_2->setText(QCoreApplication::translate("MainWindow", "MODIFIER", nullptr));
         Employer->setTabText(Employer->indexOf(Ajouter_2), QCoreApplication::translate("MainWindow", "Ajouter spectateur", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Supprimer par ID:", nullptr));
-        BoutonSupprimer_2->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "Chercher par ID:", nullptr));
-        Employer->setTabText(Employer->indexOf(Gerer_2), QCoreApplication::translate("MainWindow", "Gerer  spectateurs", nullptr));
     } // retranslateUi
 
 };

@@ -20,9 +20,17 @@ private slots:
     void handleBoutonSupprimer2Clicked();
     void on_BoutonSupprimer_2_clicked();
 
+    void on_BoutonModifier_2_clicked();
+
+    void on_tableView_2_clicked(const QModelIndex &index);
+
+    void on_pb_gotomodifier_clicked();
+
 private:
     Ui::MainWindow *ui;
     std::unique_ptr<Spectator> spectator; // Using std::unique_ptr for memory management
+    Spectator S;    static const int ID_COLUMN_INDEX = 0;
+    int selected_service =-1;
 };
 
 #endif // MAINWINDOW_H
