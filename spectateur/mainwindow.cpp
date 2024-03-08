@@ -20,8 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->le_num_2->setValidator(new QRegExpValidator(QRegExp("^\\d{8}$"), this));
     // Populate the TableView with initial data
     QSqlTableModel *model = new QSqlTableModel(this);
-    model->setTable("SPECTATEUR"); // Replace with your actual table name
-    model->select(); // Load data from the database
+    model->setTable("SPECTATEUR");
+    model->select();
     ui->tableView_2->setModel(model);
 }
 
@@ -67,16 +67,6 @@ void MainWindow::pb_ajouter_2()
 
     }
 
-    // Call the ajouterSpectator function from the Spectator class
-   /* if (S.ajouterSpectator()) {
-        // Successfully added the spectator, update UI or show a message
-        QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView_2->model());
-        model->select(); // Refresh data from the database
-        QMessageBox::information(this, "Success", "Spectator added successfully");
-    } else {
-        // Failed to add the spectator, handle the error (provide specific message)
-        QMessageBox::critical(this, "Error", "Failed to add spectator. Check data or database connection.");
-    }*/
     else{
     bool test=S.ajouterSpectator();
     if(test)
@@ -107,18 +97,7 @@ void MainWindow::pb_ajouter_2()
 
 void MainWindow::on_BoutonSupprimer_2_clicked()
 {
-    /*int idToBeDeleted = ui->LineSupprimer_2->text().toInt();
 
-    // Call the deleteSpectator function from the Spectator class
-    if (spectator->deleteSpectator(idToBeDeleted)) {
-        // Successfully deleted the spectator, update UI or show a message
-        QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView_2->model());
-        model->select(); // Refresh data from the database
-        QMessageBox::information(this, "Success", "Spectator deleted successfully");
-    } else {
-        // Failed to delete the spectator, handle the error (provide specific message)
-        QMessageBox::critical(this, "Error", "Failed to delete spectator. Check ID or database connection.");
-    }*/
     if(selected_service == -1)
     {
         QMessageBox::warning(this, "Error", "Nothing is selected!");
@@ -129,13 +108,13 @@ void MainWindow::on_BoutonSupprimer_2_clicked()
 
     if(S.deleteSpectator(id))
     {
-        QMessageBox::information(this, "Success", "Employe deleted successfull");
+        QMessageBox::information(this, "Success", "Spectator deleted successfull");
         selected_service=-1;
         ui->tableView_2->setModel(S.afficherSpectator());
     }
     else
     {
-        QMessageBox::warning(this, "Error", "Error while deleting an employe");
+        QMessageBox::warning(this, "Error", "Error while deleting a Spectator ");
     }
 }
 

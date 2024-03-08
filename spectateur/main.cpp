@@ -1,7 +1,7 @@
 #include <QMessageBox>
 #include <QApplication>
 #include "connection.h"
-#include "mainwindow.h" // Assuming your MainWindow class is defined in this header file
+#include "mainwindow.h"
 
 
 int main(int argc, char *argv[])
